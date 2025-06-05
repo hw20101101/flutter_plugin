@@ -2,13 +2,19 @@ PODS:
   - Flutter (1.0.0)
   - flutter_plugin2 (0.0.1):
     - Flutter
+    - WechatOpenSDK
   - integration_test (0.0.1):
     - Flutter
+  - WechatOpenSDK (2.0.4)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_plugin2 (from `.symlinks/plugins/flutter_plugin2/ios`)
   - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+SPEC REPOS:
+  trunk:
+    - WechatOpenSDK
 
 EXTERNAL SOURCES:
   Flutter:
@@ -20,8 +26,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_plugin2: 4c39c861e96011d3d9e28298c83cd8eee9c8f48a
+  flutter_plugin2: c9adaeb2994696dc1c3bd85055e55c5783d5d3f7
   integration_test: ce0a3ffa1de96d1a89ca0ac26fca7ea18a749ef4
+  WechatOpenSDK: 290989072e87b79d52225a01bb4e5e58f6f88593
 
 PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
 
