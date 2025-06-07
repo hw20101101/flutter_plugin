@@ -16,6 +16,8 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		9D5C0C2B2DF44E5100122838 /* RTCXIotSmart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C0C292DF44E4200122838 /* RTCXIotSmart.framework */; };
+		9D5C0C2C2DF44E5100122838 /* RTCXIotSmart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5C0C292DF44E4200122838 /* RTCXIotSmart.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E85A757BCD94380997012CED /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 848DC181B8775B9F3E9B63E3 /* libPods-Runner.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9D5C0C2C2DF44E5100122838 /* RTCXIotSmart.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +70,7 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D5C0C292DF44E4200122838 /* RTCXIotSmart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RTCXIotSmart.framework; path = ../../../ios/Classes/RTCXIotSmart.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5C0C2B2DF44E5100122838 /* RTCXIotSmart.framework in Frameworks */,
 				E85A757BCD94380997012CED /* libPods-Runner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +112,6 @@
 				69B34AFC175B98DF15B639AE /* Pods-RunnerTests.release.xcconfig */,
 				51C48B518F056FD591D9154A /* Pods-RunnerTests.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +159,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				9D5C0C292DF44E4200122838 /* RTCXIotSmart.framework */,
 				7AFFD8ED1D35381100E5BB4D /* AppDelegate.h */,
 				7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,

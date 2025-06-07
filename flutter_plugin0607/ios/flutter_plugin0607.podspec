@@ -18,6 +18,15 @@ A new Flutter plugin project.
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
 
+  # 需要链接的系统库列表
+  # s.libraries = ‘xml2’, ‘z’, ‘sqlite3’, ‘c++’
+
+  # 需要链接的系统框架列表
+  # s.frameworks = ‘QuartzCore’, ‘CoreData’, ‘MobileCoreServices’, ‘CFNetwork’, ‘CoreGraphics’
+
+  # vendored_frameworks, 随Pod一起提供的框架捆绑包的路径
+  s.vendored_frameworks = 'RTCXIotSmart.framework'
+
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 end

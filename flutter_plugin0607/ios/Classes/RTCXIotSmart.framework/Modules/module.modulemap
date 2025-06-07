@@ -1,0 +1,6 @@
+framework module RTCXIotSmart {
+  umbrella header "RTCXIotSmart.h"
+  export *
+
+  module * { export * }
+}

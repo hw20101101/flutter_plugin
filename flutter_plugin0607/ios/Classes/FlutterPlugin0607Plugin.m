@@ -1,4 +1,6 @@
 #import "FlutterPlugin0607Plugin.h"
+// 导入初始化SDK头文件
+#import <RTCXIotSmart/RTCXIotSmart.h>
 
 @implementation FlutterPlugin0607Plugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
