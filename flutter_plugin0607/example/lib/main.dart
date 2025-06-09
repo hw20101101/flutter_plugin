@@ -3,7 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_plugin0607/flutter_plugin0607.dart';
-import 'package:flutter_plugin0607/rtcx_iot_smart.dart';
+import 'package:rtcx_iot_smart/rtcx_iot_smart.dart';
 
 void main() {
   runApp(const MyApp());
