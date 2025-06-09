@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_plugin0607/flutter_plugin0607.dart';
+import 'package:rtcx_iot_smart/rtcx_account.dart';
 import 'package:rtcx_iot_smart/rtcx_iot_smart.dart';
 
 void main() {
@@ -47,6 +48,8 @@ class _MyAppState extends State<MyApp> {
       // 设置初始化完成回调
       _rtcxIotSmart.setSdkInitCompletedCallback(() {
         print('相速 SDK初始化:$_isInitialized');
+        _sendValidateCode();
+
         setState(() {
           _isInitialized = true;
         });
@@ -81,6 +84,20 @@ class _MyAppState extends State<MyApp> {
           '相速 SDK 初始化 版本:$_sdkVersion,当前语言:$_currentLanguage,国家:${_currentCountry?.areaName}');
     } catch (e) {
       print('SDK初始化失败: $e');
+    }
+  }
+
+  Future<void> _sendValidateCode() async {
+    try {
+      final rtcxPlugin = RtcxOpenAccountFlutter();
+      final result = await rtcxPlugin.sendValidateCode(
+        account: '18578534541',
+        verifyCodeType: 1, // 登录验证码
+        code: '86', // 国家码
+      );
+      print('sendCode success: $result');
+    } catch (e) {
+      print('sendCode error: $e');
     }
   }
 
