@@ -1,0 +1,6 @@
+framework module RTCXLog {
+  umbrella header "RTCXLog.h"
+  export *
+
+  module * { export * }
+}

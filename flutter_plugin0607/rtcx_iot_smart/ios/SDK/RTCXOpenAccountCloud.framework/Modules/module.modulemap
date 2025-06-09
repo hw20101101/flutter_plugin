@@ -1,0 +1,6 @@
+framework module RTCXOpenAccountCloud {
+  umbrella header "RTCXOpenAccountCloud.h"
+  export *
+
+  module * { export * }
+}
