@@ -1,6 +1,0 @@
-framework module RTCXApiClient {
-  umbrella header "RTCXApiClient.h"
-  export *
-
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module RTCXPush {
-  umbrella header "RTCXPush.h"
-  export *
-
-  module * { export * }
-}

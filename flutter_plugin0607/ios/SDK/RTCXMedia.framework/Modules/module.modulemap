@@ -1,6 +1,0 @@
-framework module RTCXMedia {
-  umbrella header "RTCXMedia.h"
-  export *
-
-  module * { export * }
-}

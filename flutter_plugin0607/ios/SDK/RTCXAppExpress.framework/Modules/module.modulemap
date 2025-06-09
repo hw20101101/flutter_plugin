@@ -1,6 +1,0 @@
-framework module RTCXAppExpress {
-  umbrella header "RTCXAppExpress.h"
-  export *
-
-  module * { export * }
-}

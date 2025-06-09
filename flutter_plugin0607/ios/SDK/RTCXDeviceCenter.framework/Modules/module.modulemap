@@ -1,6 +1,0 @@
-framework module RTCXDeviceCenter {
-  umbrella header "RTCXDeviceCenter.h"
-  export *
-
-  module * { export * }
-}

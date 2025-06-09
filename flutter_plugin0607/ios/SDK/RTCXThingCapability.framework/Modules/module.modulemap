@@ -1,6 +1,0 @@
-framework module RTCXThingCapability {
-  umbrella header "RTCXThingCapability.h"
-  export *
-
-  module * { export * }
-}
