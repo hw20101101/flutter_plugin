@@ -1,6 +1,12 @@
 #import "RtcxIotSmartPlugin.h"
 #import <RTCXIotSmart/RTCXIotSmart.h>
 
+// 导入日志SDK头文件
+#import <RTCXLog/RTCXLog.h>
+
+// 导入账号管理SDK头文件
+#import <RTCXOpenAccountCloud/RTCXOpenAccountCloud.h>
+
 @interface RtcxIotSmartPlugin()
 @property (nonatomic, strong) FlutterMethodChannel *channel;
 @end
@@ -54,17 +60,24 @@
         return;
     }
     
-    RTCXIotSmartConfig *config = [[RTCXIotSmartConfig alloc] init];
+    // 用户鉴权失效监听
+    [RTCXService(RTCXOpenAccountProtocol) setAuthenticationAbnormalCallback:^(NSInteger code, NSString * _Nonnull message) {
+        if (code == 30314) {// token失效
+            NSLog(@"-->> token失效");
+        }
+    }];
+    
+    RTCXIotSmartConfig *config = [RTCXIotSmartConfig new];
     config.appKey = appKey;
     config.appSecret = appSecret;
-    config.appType = (RTCXAppType)[appTypeIndex integerValue];
-    config.regionType = (RTCXRegionType)[regionTypeIndex integerValue];
-    
+//    config.appType = (RTCXAppType)[appTypeIndex integerValue];
+//    config.regionType = (RTCXRegionType)[regionTypeIndex integerValue];
     [RTCXIotSmart sharedInstance].config = config;
     
     // 设置初始化完成回调
     __weak typeof(self) weakSelf = self;
     [RTCXIotSmart sharedInstance].sdkInitCompletedCallback = ^{
+        NSLog(@"-->> oc sdkInitCompletedCallback");
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (strongSelf) {
             [strongSelf.channel invokeMethod:@"sdkInitCompleted" arguments:nil];
