@@ -39,8 +39,8 @@ class _MyAppState extends State<MyApp> {
     try {
       // 配置SDK
       const config = IotSmartConfig(
-        appKey: 'bOk9F2kUwgb1z4n3F6evQCc4l',
-        appSecret: 'fg5d0HyycDjnEmYuO0aGuRgO1RvVnQz',
+        appKey: 'todo',
+        appSecret: 'todo',
         appType: AppType.develop,
         regionType: RegionType.all,
       );
@@ -91,7 +91,7 @@ class _MyAppState extends State<MyApp> {
     try {
       final rtcxPlugin = RtcxOpenAccountFlutter();
       final result = await rtcxPlugin.sendValidateCode(
-        account: '18578534541',
+        account: 'todo', // 填写手机号
         verifyCodeType: 1, // 登录验证码
         code: '86', // 国家码
       );
