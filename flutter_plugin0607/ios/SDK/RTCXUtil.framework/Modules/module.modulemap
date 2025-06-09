@@ -1,0 +1,6 @@
+framework module RTCXUtil {
+  umbrella header "RTCXUtil.h"
+  export *
+
+  module * { export * }
+}
