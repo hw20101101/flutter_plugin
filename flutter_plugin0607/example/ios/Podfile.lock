@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
   flutter_plugin0607: d24f3752c2976d8469762554530878c899f5f618
   integration_test: ce0a3ffa1de96d1a89ca0ac26fca7ea18a749ef4
-  rtcx_iot_smart: dd82eb66c1c058ee5ec724e6c9f8d55f8e9d72a0
+  rtcx_iot_smart: 0749b69f89b242732e51da3836f226c580263521
 
 PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
 

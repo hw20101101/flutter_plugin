@@ -26,6 +26,12 @@ A Flutter plugin that wraps RTCXIotSmart iOS SDK for IoT device management.
   # 如果是本地框架：
   s.vendored_frameworks = 'SDK/*.framework'
   
+  # 需要链接的系统库列表
+  # s.libraries = 'libiconv'
+
+  # 需要链接的系统框架列表
+  s.frameworks = 'VideoToolbox', 'AudioToolbox', 'AVFoundation', 'CoreMedia', 'SystemConfiguration'
+
   # 如果是静态库：
   # s.vendored_libraries = 'Libraries/libRTCXIotSmart.a'
   
