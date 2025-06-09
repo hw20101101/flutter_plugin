@@ -7,6 +7,8 @@
 // 导入账号管理SDK头文件
 #import <RTCXOpenAccountCloud/RTCXOpenAccountCloud.h>
 
+#import "RtcxOpenAccountFlutterPlugin.h"
+
 @interface RtcxIotSmartPlugin()
 @property (nonatomic, strong) FlutterMethodChannel *channel;
 @end
@@ -20,6 +22,9 @@
     RtcxIotSmartPlugin* instance = [[RtcxIotSmartPlugin alloc] init];
     instance.channel = channel;
     [registrar addMethodCallDelegate:instance channel:channel];
+    
+    // 注册其他 SDK 插件
+    [RtcxOpenAccountFlutterPlugin registerWithRegistrar:registrar];
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
