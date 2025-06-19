@@ -109,6 +109,7 @@ class _MyAppState extends State<MyApp> {
     try {
       platformVersion = await _flutterPlugin0607Plugin.getPlatformVersion() ??
           'Unknown platform version';
+      _flutterPlugin0607Plugin.initWechatSDK();
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }

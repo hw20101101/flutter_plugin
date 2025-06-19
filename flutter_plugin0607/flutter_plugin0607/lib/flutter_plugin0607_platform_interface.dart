@@ -26,4 +26,8 @@ abstract class FlutterPlugin0607Platform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<String?> initWechatSDK() {
+    throw UnimplementedError('initWechatSDK() has not been implemented.');
+  }
 }

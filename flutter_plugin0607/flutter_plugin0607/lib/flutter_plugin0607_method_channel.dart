@@ -11,7 +11,14 @@ class MethodChannelFlutterPlugin0607 extends FlutterPlugin0607Platform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
+    return version;
+  }
+
+  @override
+  Future<String?> initWechatSDK() async {
+    final version = await methodChannel.invokeMethod<String>('initWechatSDK');
     return version;
   }
 }

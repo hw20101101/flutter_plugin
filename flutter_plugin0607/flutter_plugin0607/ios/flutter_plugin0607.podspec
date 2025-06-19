@@ -28,6 +28,8 @@ A new Flutter plugin project.
   # vendored_frameworks, 随Pod一起提供的框架捆绑包的路径
   # s.vendored_frameworks = 'SDK/*.framework'
 
+  s.dependency 'WechatOpenSDK' 
+
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 end
